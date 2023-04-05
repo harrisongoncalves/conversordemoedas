@@ -24,9 +24,18 @@ def main():
     "5 --> Dólar para euro\n"
     "6 --> Euro para dólar\n"
     "7 --> Sair do programa")
-    moeda = int(input("Digite a sua opção: ").replace(",","."))
-    moedaEscolhida, texto, moedinha = Cotacoes.escolherMoeda(moeda)
-    converterMoeda(moedaEscolhida, texto, moedinha)
+    while True:
+        try:
+            moeda = int(input("Digite a sua opção: "))
+            if moeda >= 1 and moeda <= 7:
+                moedaEscolhida, texto, moedinha = Cotacoes.escolherMoeda(moeda)
+                converterMoeda(moedaEscolhida, texto, moedinha)
+            else:
+                print("Digite uma opção válida.")
+        except ValueError:
+            print("Digite uma opção válida:")
+            continue
+
 
 
 

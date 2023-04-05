@@ -8,8 +8,8 @@ class Cotacoes:
         cotacoes = cotacoes.json()
     except requests.exceptions.RequestException as e:
         print(f"Não foi possível obter as cotações: {e}")
-    except requests.exceptions.HTTPError as e:
-        print(f"Erro HTTP: {e}")
+    except Exception as e:
+        print(f"Erro inesperado: {e}")
 
     def sair():
         print("Obrigado por utilizar o meu programa.")
