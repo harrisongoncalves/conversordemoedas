@@ -31,7 +31,7 @@ class Cotacoes:
             texto = "Digite o valor que você quer transformar em euro: R$ "
             moedinha = "EUR€"
         elif moeda == 4:
-            moedaEscolhida = float(Cotacoes.otacoes['EURBRL']['bid'])
+            moedaEscolhida = float(Cotacoes.cotacoes['EURBRL']["bid"])
             texto = "Digite o valor que você quer transformar em real: EUR€ "
             moedinha = "R$"
         elif moeda == 5:
