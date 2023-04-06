@@ -15,8 +15,7 @@ class Cotacoes:
         print("Obrigado por utilizar o meu programa.")
         time.sleep(1.5)
         exit()
-
-
+    
 
     def escolherMoeda(moeda):
         if moeda == 1:
@@ -32,7 +31,7 @@ class Cotacoes:
             texto = "Digite o valor que você quer transformar em euro: R$ "
             moedinha = "EUR€"
         elif moeda == 4:
-            moedaEscolhida = float(Cotacoes.cotacoes['EURBRL']['bid'])
+            moedaEscolhida = float(Cotacoes.otacoes['EURBRL']['bid'])
             texto = "Digite o valor que você quer transformar em real: EUR€ "
             moedinha = "R$"
         elif moeda == 5:

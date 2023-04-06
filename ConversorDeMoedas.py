@@ -1,6 +1,4 @@
-from cotacoes import Cotacoes
-import time
-
+from cotacoes import Cotacoes, time
 
 def continuar():
      while True: 
@@ -16,6 +14,7 @@ def continuar():
 
 def main():
     print("Conversor de moedas")
+    print(f"US$ = R$ {float(Cotacoes.cotacoes['USDBRL']['bid']):.2f} | EUR€ = R$ {float(Cotacoes.cotacoes['EURBRL']['bid']):.2f}\n")
     print("Selecione a opção de conversão:")
     print("1 --> Real para dólar\n"
     "2 --> Dólar para real\n"
@@ -33,7 +32,7 @@ def main():
             else:
                 print("Digite uma opção válida.")
         except ValueError:
-            print("Digite uma opção válida:")
+            print("Digite uma opção válida.")
             continue
 
 
