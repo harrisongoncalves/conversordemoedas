@@ -9,6 +9,7 @@
     <img alt="Made by Harrison Gonçalves" src="https://img.shields.io/badge/made%20by-Harrison%20Gonçalves-brightgreen">
   </a>
 <img alt="Last Commit" src="https://img.shields.io/github/last-commit/harrisongoncalves/conversordemoedas">
+<img alt="License" src="https://shields.io/badge/license-MIT-green">
 
 </p>
 
